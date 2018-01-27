@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+}
+
+body {
+    background: #02010a;
+    color: white;
+    font-family: Dancing Script;
+    font-size: 14pt;
+}
+
+#contenido {
+    width: 900px;
+    margin: 0 auto;
+    min-height: 200px;
+}
+
+header {
+    background: #5b7989;
+    border-radius: 10px 10px 0 0;
+    padding: 15px 15px;
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    animation: slide 1s;
+}
+
+@font-face {
+    src: url(Fuentes/dancing_script/Dancing_Script.ttf);
+    font-family: Dancing Script;
+}
+
+#titulo {
+    width: 70%;
+    text-shadow: 2px 2px #02010a;
+    text-indent: 15px;
+}
+
+#menu {
+    width: 30%;
+    font-size: 14pt;
+}
+
+#menu a,
+#menu a:hover {
+    color: #fff;
+    padding: 15px;
+}
+
+#menu a+a::before {
+    color: #fff;
+    text-decoration: none;
+}
+
+#menu .actual {
+    text-decoration: none;
+}
+
+#cabecera {
+    background-color: #82c3a6;
+    padding: 20px;
+}
+
+img {
+    width: 100%;
+    box-shadow: 2px 2px #02010a
+}
+
+#secundaria {
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    background: #d5c75f;
+    padding: 20px 0;
+}
+
+h2 {
+    color: #02010a;
+}
+
+.imagen2 {
+    width: 50%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+.imagen3 {
+    width: 50%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+.paisajes {
+    box-shadow: 2px 2px #02010a;
+    transition: transform 2s;
+}
+
+.paisajes:hover {
+    transform: rotate(10deg);
+}
+
+.retratos {
+    box-shadow: 2px 2px #02010a;
+    transition: transform 2s;
+}
+
+.retratos:hover {
+    transform: translate(20px, -5px);
+}
+
+.imagenes {
+    width: 33.33%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+footer {
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    background-color: #C6d5c5;
+    padding: 15px 0;
+    color: black;
+    border-radius: 0 0 10px 10px;
+}
+
+footer .columna {
+    width: 25%;
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+.icono {
+    width: 15px;
+}
+
+@keyframes slide {
+    0% {
+        margin-top: 160%;
+    }
+    60% {
+        margin-top: -5%;
+    }
+    100% {
+        margin-top: 0%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #contenido {
+        width: 100%;
+        margin: 0 auto;
+    }
+    #menu,
+    #titulo {
+        width: 100%;
+        text-align: center;
+    }
+    .imagen2 {
+        width: 100%;
+    }
+    .imagen3 {
+        width: 100%;
+    }
+    .imagenes {
+        width: 100%;
+    }
+    footer .columna {
+        width: 100%;
+    }
+}
